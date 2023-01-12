@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/bookShelfsFragment">
+
+    <fragment
+        android:id="@+id/bookShelfsFragment"
+        android:name="com.example.bookshelf.ui.BookShelfsFragment"
+        android:label="BOOK SHELF"
+        tools:layout="@layout/fragment_book_shelfs" >
+
+        <action
+            android:id="@+id/action_bookShelfsFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" >
+        </action>
+        <action
+            android:id="@+id/action_bookShelfsFragment_to_bookFragment"
+            app:destination="@id/bookFragment" >
+
+            <argument
+                android:name="name"
+                app:argType="string" />
+            <argument
+                android:name="subtital"
+                app:argType="string" />
+            <argument
+                android:name="author"
+                app:argType="string" />
+            <argument
+                android:name="price"
+                app:argType="string" />
+            <argument
+                android:name="lang"
+                app:argType="string" />
+            <argument
+                android:name="pages"
+                app:argType="string" />
+            <argument
+                android:name="publisher"
+                app:argType="string" />
+            <argument
+                android:name="ratingCount"
+                app:argType="string" />
+            <argument
+                android:name="averageRating"
+                app:argType="string" />
+            <argument
+                android:name="publisherDate"
+                app:argType="string" />
+            <argument
+                android:name="image"
+                app:argType="string" />
+            <argument
+                android:name="description"
+                app:argType="string" />
+            <argument
+                android:name="info"
+                app:argType="string"/>
+            <argument
+                android:name="webReader"
+                app:argType="string"/>
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.bookshelf.ui.FavoritesFragment"
+        android:label="FAVORITE"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_bookFragment"
+            app:destination="@id/bookFragment" >
+
+            <argument
+                android:name="name"
+                app:argType="string" />
+            <argument
+                android:name="subtital"
+                app:argType="string" />
+            <argument
+                android:name="author"
+                app:argType="string" />
+            <argument
+                android:name="price"
+                app:argType="string" />
+            <argument
+                android:name="lang"
+                app:argType="string" />
+            <argument
+                android:name="pages"
+                app:argType="string" />
+            <argument
+                android:name="publisher"
+                app:argType="string" />
+            <argument
+                android:name="ratingCount"
+                app:argType="string" />
+            <argument
+                android:name="averageRating"
+                app:argType="string" />
+            <argument
+                android:name="publisherDate"
+                app:argType="string" />
+            <argument
+                android:name="image"
+                app:argType="string" />
+            <argument
+                android:name="description"
+                app:argType="string" />
+            <argument
+                android:name="info"
+                app:argType="string"/>
+            <argument
+                android:name="webReader"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.bookshelf.ui.BookFragment"
+        android:label="BOOK PAGE"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bookshelf.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_bookShelfsFragment"
+            app:destination="@id/bookShelfsFragment" />
+    </fragment>
+</navigation>

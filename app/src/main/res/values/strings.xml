@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BookShelf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_for_book_or_author">Search for book or author</string>
+    <string name="name">Live</string>
+    <string name="author">Nawaf</string>
+    <string name="tital">This is live</string>
+    <string name="price">500</string>
+    <string name="lang">en</string>
+    <string name="pages">100</string>
+    <string name="publisher">Hafar Albatin</string>
+    <string name="ratingCount">5</string>
+    <string name="averageRating">5</string>
+    <string name="publisherDate">1999</string>
+    <string name="description">The classic novel about a daring experiment in human intelligence \'A masterpiece of poignant brilliance . . . heartbreaking, and utterly, completely brilliant\' Guardian \'A timeless tearjerker\' Independent Charlie Gordon, IQ 68, is a floor sweeper and the gentle butt of everyone\'s jokes - until an experiment in the enhancement of human intelligence turns him into a genius. But then Algernon, the mouse whose triumphal experimental transformation preceded his, fades and dies, and Charlie has to face the possibility that his salvation was only temporary. Readers can\'t stop reading Flowers For Algernon: \'I am finding it hard to put into words the vast range of emotions I experienced while reading this tale of hope, perseverance, truth and humanity . . . I\'m a huge fan of science fiction that doesn\'t seem too far away; something that I could imagine being just around the corner - and that\'s how I felt about Flowers for Algernon\' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐ \'You\'re watching Charlie, the main character, go through an experimental procedure that increases his IQ. The whole book, written in diary entries, let us see how it affects his life and how he struggles through it. I rarely cry while reading a book but I couldn\'t help myself here. It\'s a classic for a reason. Read it. You won\'t be able to put it down\' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐ \'Heartbreaking and beautiful. Required reading, as far as I am concerned\' Wil Wheaton \'This book is extraordinary, one of my favorites. It is a fast read but is is very powerful and heartbreaking. I read it in the plane and I felt a little embarrassed when I started to weep at the end of the book\' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐ \'One of those stories I wish I would have read years earlier. It\'s simply marvellous. It\'s about the nature of intelligence and how intelligence can be divisive. It\'s a very emotional book\' Goodreads reviewer, ⭐ ⭐ ⭐ ⭐ ⭐</string>
+    <string name="action_move_to_favorites_layout">Action move to favorites</string>
+</resources>

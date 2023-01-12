@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="books"
+            type="com.example.bookshelf.domain.ModelBook" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<com.google.android.material.card.MaterialCardView
+
+    android:id="@+id/bookCard"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    app:cardCornerRadius="10dp"
+
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="16dp"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/cardLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_color"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/bookImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:imageUrl="@{books.thumbnail}"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            tools:text="Book Name"
+            android:text="@{books.title}"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            tools:text="Author"
+            android:text="@{books.author}"
+            android:textColor="@color/text_color"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/favoriteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="100dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shelf_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
