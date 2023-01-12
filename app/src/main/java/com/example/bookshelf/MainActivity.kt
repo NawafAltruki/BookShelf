@@ -18,14 +18,6 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
         setupActionBarWithNavController(navController)
-        // navController to chick if the navDestination is splashFragment remove the action bar
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.splashFragment) {
-                supportActionBar?.hide()
-            }else{
-                supportActionBar?.show()
-            }
-        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

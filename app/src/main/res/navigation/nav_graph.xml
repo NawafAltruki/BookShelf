@@ -122,13 +122,4 @@
         android:name="com.example.bookshelf.ui.BookFragment"
         android:label="BOOK PAGE"
         tools:layout="@layout/fragment_book" />
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.bookshelf.ui.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_bookShelfsFragment"
-            app:destination="@id/bookShelfsFragment" />
-    </fragment>
 </navigation>
